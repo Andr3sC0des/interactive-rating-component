@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+.flag {
+  position: absolute;
+  top: 0;
+  margin-top: 5px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background: #2e2e2e;
+  width: 120px;
+  height: 50px;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+.flag:hover {
+  width: 400px;
+  color: transparent;
+}
+.flag:hover .attribution {
+  width: 400px;
+  opacity: 1;
+}
+
+.attribution {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 1s;
+  width: 0;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+.attribution a {
+  color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+.ratingcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #141519;
+}
+
+.rating {
+  background-color: #1e252f;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.rating h2 {
+  margin-top: 2rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+}
+.rating p {
+  margin-top: 2rem;
+  color: hsl(217deg, 12%, 63%);
+  font-weight: 400;
+  max-width: 25rem;
+  line-height: 2rem;
+}
+.rating__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating__button {
+  margin-top: 2rem;
+  color: hsl(0deg, 0%, 100%);
+  border: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background: #252e37;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1rem;
+}
+.rating__submit {
+  margin-top: 2rem;
+  padding: 1rem;
+  color: hsl(0deg, 0%, 100%);
+  background: hsl(25deg, 97%, 53%);
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 90%;
+}
+.rating__submit:active {
+  background: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+}
+
+#thank__state {
+  display: none;
+}
+#thank__state .rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  animation: fade 1s ease;
+}
+#thank__state .rating h4 {
+  color: hsl(25deg, 97%, 53%);
+  margin-top: 2rem;
+  font-weight: 400;
+  background: #252e37;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+.background {
+  background: hsl(25deg, 97%, 53%);
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
